@@ -8,17 +8,80 @@
 
 /* Begin PBXBuildFile section */
 		2734F11F2BDCC62D001E25BB /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F11E2BDCC62D001E25BB /* ExpenseTrackerApp.swift */; };
-		2734F1212BDCC62D001E25BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1202BDCC62D001E25BB /* ContentView.swift */; };
 		2734F1232BDCC62E001E25BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2734F1222BDCC62E001E25BB /* Assets.xcassets */; };
 		2734F1262BDCC62E001E25BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2734F1252BDCC62E001E25BB /* Preview Assets.xcassets */; };
+		2734F1382BDCC8BB001E25BB /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1372BDCC8BB001E25BB /* MainTabView.swift */; };
+		2734F13C2BDCC97D001E25BB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F13B2BDCC97D001E25BB /* HomeView.swift */; };
+		2734F13E2BDCC98F001E25BB /* ExpenseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F13D2BDCC98F001E25BB /* ExpenseListView.swift */; };
+		2734F1402BDCC998001E25BB /* ExpenseStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F13F2BDCC998001E25BB /* ExpenseStatisticsView.swift */; };
+		2734F1422BDCC9A3001E25BB /* AddExpenseFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1412BDCC9A3001E25BB /* AddExpenseFormView.swift */; };
+		2734F1472BDCCD3F001E25BB /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1462BDCCD3F001E25BB /* MockData.swift */; };
+		2734F1492BDCCD54001E25BB /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1482BDCCD54001E25BB /* Expense.swift */; };
+		2734F14B2BDCDF04001E25BB /* ExpenseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F14A2BDCDF04001E25BB /* ExpenseList.swift */; };
+		2734F14D2BDCDF0D001E25BB /* ExpenseListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F14C2BDCDF0D001E25BB /* ExpenseListItemView.swift */; };
+		2734F14F2BDD90AF001E25BB /* RecentExpenseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F14E2BDD90AF001E25BB /* RecentExpenseList.swift */; };
+		2734F1512BDDA8FB001E25BB /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1502BDDA8FB001E25BB /* ButtonExtension.swift */; };
+		2734F1532BDDC2A8001E25BB /* SavingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1522BDDC2A8001E25BB /* SavingListView.swift */; };
+		2734F1562BDDCC0E001E25BB /* SavingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1552BDDCC0E001E25BB /* SavingList.swift */; };
+		2734F1582BDDCC1C001E25BB /* HomeSavingListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1572BDDCC1C001E25BB /* HomeSavingListItemView.swift */; };
+		2734F15A2BDDCE21001E25BB /* HomeSavingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1592BDDCE21001E25BB /* HomeSavingList.swift */; };
+		2734F15C2BDE0FA7001E25BB /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F15B2BDE0FA7001E25BB /* DoubleExtension.swift */; };
+		2734F15E2BDE1268001E25BB /* Saving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F15D2BDE1268001E25BB /* Saving.swift */; };
+		2734F1602BDE12B4001E25BB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F15F2BDE12B4001E25BB /* Category.swift */; };
+		2734F1622BDECBE0001E25BB /* SavingListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1612BDECBE0001E25BB /* SavingListItemView.swift */; };
+		2734F1682BE075B7001E25BB /* AddSavingItemFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1672BE075B7001E25BB /* AddSavingItemFormView.swift */; };
+		2734F16A2BE077FC001E25BB /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1692BE077FC001E25BB /* ColorExtension.swift */; };
+		2734F16C2BE07D92001E25BB /* EditExpenseFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F16B2BE07D92001E25BB /* EditExpenseFormView.swift */; };
+		2734F16E2BE07F3A001E25BB /* EditSavingItemFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F16D2BE07F3A001E25BB /* EditSavingItemFormView.swift */; };
+		2734F1732BE2FF1A001E25BB /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 2734F1722BE2FF1A001E25BB /* OrderedCollections */; };
+		2734F1752BE300F3001E25BB /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1742BE300F3001E25BB /* DateExtension.swift */; };
+		2734F1772BE3161E001E25BB /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1762BE3161E001E25BB /* StringExtension.swift */; };
+		2734F17A2BE36EEB001E25BB /* BudgetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1792BE36EEA001E25BB /* BudgetForm.swift */; };
+		2734F17C2BE45FEF001E25BB /* BudgetRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F17B2BE45FEF001E25BB /* BudgetRingView.swift */; };
+		2734F17E2BE4B8FE001E25BB /* SavingListTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F17D2BE4B8FE001E25BB /* SavingListTipView.swift */; };
+		2734F1802BE4C1A3001E25BB /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F17F2BE4C1A3001E25BB /* BarChartView.swift */; };
+		2734F1842BE5BE74001E25BB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2734F1832BE5BE74001E25BB /* Constants.swift */; };
+		273F94292BE5CA8C0096C49E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273F94282BE5CA8C0096C49E /* LaunchScreen.storyboard */; };
+		273F942D2BE81E4A0096C49E /* ButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F942C2BE81E4A0096C49E /* ButtonAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2734F11B2BDCC62D001E25BB /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2734F11E2BDCC62D001E25BB /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
-		2734F1202BDCC62D001E25BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2734F1222BDCC62E001E25BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2734F1252BDCC62E001E25BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2734F1372BDCC8BB001E25BB /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		2734F13B2BDCC97D001E25BB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2734F13D2BDCC98F001E25BB /* ExpenseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseListView.swift; sourceTree = "<group>"; };
+		2734F13F2BDCC998001E25BB /* ExpenseStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseStatisticsView.swift; sourceTree = "<group>"; };
+		2734F1412BDCC9A3001E25BB /* AddExpenseFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseFormView.swift; sourceTree = "<group>"; };
+		2734F1462BDCCD3F001E25BB /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		2734F1482BDCCD54001E25BB /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		2734F14A2BDCDF04001E25BB /* ExpenseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseList.swift; sourceTree = "<group>"; };
+		2734F14C2BDCDF0D001E25BB /* ExpenseListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseListItemView.swift; sourceTree = "<group>"; };
+		2734F14E2BDD90AF001E25BB /* RecentExpenseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentExpenseList.swift; sourceTree = "<group>"; };
+		2734F1502BDDA8FB001E25BB /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
+		2734F1522BDDC2A8001E25BB /* SavingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingListView.swift; sourceTree = "<group>"; };
+		2734F1552BDDCC0E001E25BB /* SavingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingList.swift; sourceTree = "<group>"; };
+		2734F1572BDDCC1C001E25BB /* HomeSavingListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSavingListItemView.swift; sourceTree = "<group>"; };
+		2734F1592BDDCE21001E25BB /* HomeSavingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSavingList.swift; sourceTree = "<group>"; };
+		2734F15B2BDE0FA7001E25BB /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		2734F15D2BDE1268001E25BB /* Saving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saving.swift; sourceTree = "<group>"; };
+		2734F15F2BDE12B4001E25BB /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		2734F1612BDECBE0001E25BB /* SavingListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingListItemView.swift; sourceTree = "<group>"; };
+		2734F1672BE075B7001E25BB /* AddSavingItemFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSavingItemFormView.swift; sourceTree = "<group>"; };
+		2734F1692BE077FC001E25BB /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		2734F16B2BE07D92001E25BB /* EditExpenseFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditExpenseFormView.swift; sourceTree = "<group>"; };
+		2734F16D2BE07F3A001E25BB /* EditSavingItemFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSavingItemFormView.swift; sourceTree = "<group>"; };
+		2734F1742BE300F3001E25BB /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		2734F1762BE3161E001E25BB /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		2734F1792BE36EEA001E25BB /* BudgetForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetForm.swift; sourceTree = "<group>"; };
+		2734F17B2BE45FEF001E25BB /* BudgetRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetRingView.swift; sourceTree = "<group>"; };
+		2734F17D2BE4B8FE001E25BB /* SavingListTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingListTipView.swift; sourceTree = "<group>"; };
+		2734F17F2BE4C1A3001E25BB /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		2734F1832BE5BE74001E25BB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		273F94282BE5CA8C0096C49E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		273F942C2BE81E4A0096C49E /* ButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2734F1732BE2FF1A001E25BB /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +115,11 @@
 		2734F11D2BDCC62D001E25BB /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
-				2734F11E2BDCC62D001E25BB /* ExpenseTrackerApp.swift */,
-				2734F1202BDCC62D001E25BB /* ContentView.swift */,
+				2734F12C2BDCC66E001E25BB /* App */,
+				2734F12D2BDCC673001E25BB /* Core */,
+				2734F12E2BDCC6A2001E25BB /* Extensions */,
+				2734F1302BDCC703001E25BB /* Models */,
+				2734F12F2BDCC6C8001E25BB /* Utils */,
 				2734F1222BDCC62E001E25BB /* Assets.xcassets */,
 				2734F1242BDCC62E001E25BB /* Preview Content */,
 			);
@@ -65,6 +132,162 @@
 				2734F1252BDCC62E001E25BB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2734F12C2BDCC66E001E25BB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2734F11E2BDCC62D001E25BB /* ExpenseTrackerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2734F12D2BDCC673001E25BB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				273F94272BE5CA7B0096C49E /* Launch */,
+				2734F1782BE36ECA001E25BB /* BudgetSetting */,
+				2734F1632BDEFDDB001E25BB /* Components */,
+				2734F1342BDCC7CB001E25BB /* ExpenseForm */,
+				2734F1322BDCC724001E25BB /* ExpenseList */,
+				2734F1332BDCC732001E25BB /* ExpenseStatistics */,
+				2734F1312BDCC71B001E25BB /* Home */,
+				2734F1362BDCC8A1001E25BB /* TabBar */,
+				2734F1662BE0758E001E25BB /* SavingFormView */,
+				2734F1542BDDC2AC001E25BB /* SavingList */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2734F12E2BDCC6A2001E25BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2734F1502BDDA8FB001E25BB /* ButtonExtension.swift */,
+				2734F15B2BDE0FA7001E25BB /* DoubleExtension.swift */,
+				2734F1692BE077FC001E25BB /* ColorExtension.swift */,
+				2734F1742BE300F3001E25BB /* DateExtension.swift */,
+				2734F1762BE3161E001E25BB /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2734F12F2BDCC6C8001E25BB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2734F1452BDCCD22001E25BB /* MockData */,
+				2734F1832BE5BE74001E25BB /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2734F1302BDCC703001E25BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2734F1482BDCCD54001E25BB /* Expense.swift */,
+				2734F15D2BDE1268001E25BB /* Saving.swift */,
+				2734F15F2BDE12B4001E25BB /* Category.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2734F1312BDCC71B001E25BB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2734F13B2BDCC97D001E25BB /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2734F1322BDCC724001E25BB /* ExpenseList */ = {
+			isa = PBXGroup;
+			children = (
+				2734F13D2BDCC98F001E25BB /* ExpenseListView.swift */,
+				2734F14A2BDCDF04001E25BB /* ExpenseList.swift */,
+				2734F14C2BDCDF0D001E25BB /* ExpenseListItemView.swift */,
+				2734F14E2BDD90AF001E25BB /* RecentExpenseList.swift */,
+			);
+			path = ExpenseList;
+			sourceTree = "<group>";
+		};
+		2734F1332BDCC732001E25BB /* ExpenseStatistics */ = {
+			isa = PBXGroup;
+			children = (
+				2734F13F2BDCC998001E25BB /* ExpenseStatisticsView.swift */,
+				2734F17F2BE4C1A3001E25BB /* BarChartView.swift */,
+			);
+			path = ExpenseStatistics;
+			sourceTree = "<group>";
+		};
+		2734F1342BDCC7CB001E25BB /* ExpenseForm */ = {
+			isa = PBXGroup;
+			children = (
+				2734F1412BDCC9A3001E25BB /* AddExpenseFormView.swift */,
+				2734F16B2BE07D92001E25BB /* EditExpenseFormView.swift */,
+			);
+			path = ExpenseForm;
+			sourceTree = "<group>";
+		};
+		2734F1362BDCC8A1001E25BB /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2734F1372BDCC8BB001E25BB /* MainTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2734F1452BDCCD22001E25BB /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				2734F1462BDCCD3F001E25BB /* MockData.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		2734F1542BDDC2AC001E25BB /* SavingList */ = {
+			isa = PBXGroup;
+			children = (
+				2734F1522BDDC2A8001E25BB /* SavingListView.swift */,
+				2734F1552BDDCC0E001E25BB /* SavingList.swift */,
+				2734F1612BDECBE0001E25BB /* SavingListItemView.swift */,
+				2734F1592BDDCE21001E25BB /* HomeSavingList.swift */,
+				2734F1572BDDCC1C001E25BB /* HomeSavingListItemView.swift */,
+				2734F17D2BE4B8FE001E25BB /* SavingListTipView.swift */,
+			);
+			path = SavingList;
+			sourceTree = "<group>";
+		};
+		2734F1632BDEFDDB001E25BB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2734F17B2BE45FEF001E25BB /* BudgetRingView.swift */,
+				273F942C2BE81E4A0096C49E /* ButtonAnimationView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2734F1662BE0758E001E25BB /* SavingFormView */ = {
+			isa = PBXGroup;
+			children = (
+				2734F1672BE075B7001E25BB /* AddSavingItemFormView.swift */,
+				2734F16D2BE07F3A001E25BB /* EditSavingItemFormView.swift */,
+			);
+			path = SavingFormView;
+			sourceTree = "<group>";
+		};
+		2734F1782BE36ECA001E25BB /* BudgetSetting */ = {
+			isa = PBXGroup;
+			children = (
+				2734F1792BE36EEA001E25BB /* BudgetForm.swift */,
+			);
+			path = BudgetSetting;
+			sourceTree = "<group>";
+		};
+		273F94272BE5CA7B0096C49E /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				273F94282BE5CA8C0096C49E /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +306,9 @@
 			dependencies = (
 			);
 			name = ExpenseTracker;
+			packageProductDependencies = (
+				2734F1722BE2FF1A001E25BB /* OrderedCollections */,
+			);
 			productName = ExpenseTracker;
 			productReference = 2734F11B2BDCC62D001E25BB /* ExpenseTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +337,9 @@
 				Base,
 			);
 			mainGroup = 2734F1122BDCC62D001E25BB;
+			packageReferences = (
+				2734F1712BE2FF1A001E25BB /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = 2734F11C2BDCC62D001E25BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273F94292BE5CA8C0096C49E /* LaunchScreen.storyboard in Resources */,
 				2734F1262BDCC62E001E25BB /* Preview Assets.xcassets in Resources */,
 				2734F1232BDCC62E001E25BB /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +367,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2734F1212BDCC62D001E25BB /* ContentView.swift in Sources */,
+				2734F1532BDDC2A8001E25BB /* SavingListView.swift in Sources */,
+				2734F1582BDDCC1C001E25BB /* HomeSavingListItemView.swift in Sources */,
+				2734F16A2BE077FC001E25BB /* ColorExtension.swift in Sources */,
+				2734F13C2BDCC97D001E25BB /* HomeView.swift in Sources */,
+				2734F1402BDCC998001E25BB /* ExpenseStatisticsView.swift in Sources */,
+				2734F1802BE4C1A3001E25BB /* BarChartView.swift in Sources */,
+				2734F1772BE3161E001E25BB /* StringExtension.swift in Sources */,
+				2734F1842BE5BE74001E25BB /* Constants.swift in Sources */,
+				2734F1752BE300F3001E25BB /* DateExtension.swift in Sources */,
+				2734F1422BDCC9A3001E25BB /* AddExpenseFormView.swift in Sources */,
+				2734F1472BDCCD3F001E25BB /* MockData.swift in Sources */,
+				273F942D2BE81E4A0096C49E /* ButtonAnimationView.swift in Sources */,
+				2734F1622BDECBE0001E25BB /* SavingListItemView.swift in Sources */,
+				2734F13E2BDCC98F001E25BB /* ExpenseListView.swift in Sources */,
+				2734F14B2BDCDF04001E25BB /* ExpenseList.swift in Sources */,
+				2734F1562BDDCC0E001E25BB /* SavingList.swift in Sources */,
+				2734F1682BE075B7001E25BB /* AddSavingItemFormView.swift in Sources */,
+				2734F17A2BE36EEB001E25BB /* BudgetForm.swift in Sources */,
+				2734F17E2BE4B8FE001E25BB /* SavingListTipView.swift in Sources */,
+				2734F14F2BDD90AF001E25BB /* RecentExpenseList.swift in Sources */,
+				2734F1602BDE12B4001E25BB /* Category.swift in Sources */,
+				2734F16E2BE07F3A001E25BB /* EditSavingItemFormView.swift in Sources */,
+				2734F1492BDCCD54001E25BB /* Expense.swift in Sources */,
+				2734F15C2BDE0FA7001E25BB /* DoubleExtension.swift in Sources */,
+				2734F17C2BE45FEF001E25BB /* BudgetRingView.swift in Sources */,
+				2734F16C2BE07D92001E25BB /* EditExpenseFormView.swift in Sources */,
 				2734F11F2BDCC62D001E25BB /* ExpenseTrackerApp.swift in Sources */,
+				2734F15E2BDE1268001E25BB /* Saving.swift in Sources */,
+				2734F15A2BDDCE21001E25BB /* HomeSavingList.swift in Sources */,
+				2734F14D2BDCDF0D001E25BB /* ExpenseListItemView.swift in Sources */,
+				2734F1512BDDA8FB001E25BB /* ButtonExtension.swift in Sources */,
+				2734F1382BDCC8BB001E25BB /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +538,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,8 +568,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +606,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2734F1712BE2FF1A001E25BB /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2734F1722BE2FF1A001E25BB /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2734F1712BE2FF1A001E25BB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2734F1132BDCC62D001E25BB /* Project object */;
 }
